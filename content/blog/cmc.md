@@ -1,0 +1,31 @@
+---
+title: Computer Mediated Communication
+desc: Rangkuman CMC
+author: Muhammad Anugrah Pratama
+status: published
+tags:
+    - ptnim
+    - tugas
+---
+
+|           |                          |
+| --------- | ------------------------ |
+| **Nama**  | Muhammad Anugrah Pratama |
+| **Kelas** | 2IA02                    |
+| **NPM**   | 50420791                 |
+
+# Computer Mediated Communication
+Computer Mediated Communication (_CMC_) adalah sebuah bentuk komunikasi baru yang dapat dikatakan menandai era perubahan teknologi dan sosial. Computer Mediated Communication adalahistilah yang digunakan untuk melakukan komunikasi antara dua orang atau lebih yang dapat berinteraksi melalui komputer yang berbeda.
+
+Sebuah bentuk komunikasi dapat dimasukkan ke dalam kategori CMC ketika dua atau beberapa orang didalamnya hanya dapat saling berkomunikasi melalui komputer yang termasuk ke dalam teknologi komunikasi baru. Mengirim dan menerima surel (Surat Elektronik atau _email_), menggunakan telepon genggam model _smartphone_ atau bahkan mengunduh atau mengunggah lagu, gambar, ataupun video juga bisa dikategorikan sebagai CMC.
+
+Perkembangan teknologi internet mengharuskan orang untuk menggunakan komputer sebagai media informasi. Membuat konvergensi internet dibagi menjadi tiga bagian:
+
+## 1. Cyberspace
+Cyberspace berkaitan erat dengan media berupa jaringan komputer digital dimana komunikasi antar entitas (baik yang berwujud manusia maupun yang bukan manusia) berlangsung.
+
+## 2. Cybersociety
+Cybersociety adalah sebuah istilah Pesatnya perkembangan teknologi komunikasi dalam bidang informasi, dimana salah satunya yaitu internet, yang mana telah membuat sebagian masyarakat menjadi tergantung oleh fasilitas-fasilitas yang disediakan oleh internet.
+
+## 3. Cyberculture
+Cyberculture adalah segala budaya yang telah atau sedang muncul dari penggunaan jaringan komputer untuk komunikasi, hiburan, dan bisnis. Cyber culture juga mencakup tentang studi berbagai fenomena sosial yang berkaitan dengan internet dan bentuk-bentuk baru komunikasi jaringan lainnya seperti komunitas online, game multiplayer online, jejaring sosial, texting, dan segala hal yang berkaitan dengan identitas, privasi, dan pembetukan jaringan.
