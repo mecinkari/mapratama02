@@ -1,11 +1,15 @@
 <template>
-  <div class="py-5 max-w-xl mx-auto">
+  <div class="py-5 max-w-2xl px-6 mx-auto">
     <h1 class="text-4xl font-bold">
       Tag: <span class="text-blue-600 underline">#{{ slug }}</span>
     </h1>
     <hr class="border my-4" />
     <div class="flex flex-col gap-y-4">
-      <article v-for="article in articles" :key="article" class="p-5 shadow">
+      <article
+        v-for="article in articles"
+        :key="article"
+        class="p-5 rounded border"
+      >
         <div class="mb-3">
           <nuxt-link
             class="p-1 text-sm rounded mr-2 text-blue-600 font-bold bg-blue-50"

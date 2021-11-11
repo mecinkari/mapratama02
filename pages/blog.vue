@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 max-w-xl mx-auto">
+  <div class="py-5 max-w-2xl px-6 mx-auto">
     <h1 class="text-4xl font-bold">Blog</h1>
     <hr class="border my-4" />
     <div class="flex flex-col gap-y-4">
