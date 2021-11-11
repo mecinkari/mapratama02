@@ -1,7 +1,7 @@
 <template>
   <div class="py-5 max-w-xl mx-auto">
     <h1 class="text-4xl font-bold">
-      Blog dengan tag: <span class="text-blue-600 underline">#{{ slug }}</span>
+      Tag: <span class="text-blue-600 underline">#{{ slug }}</span>
     </h1>
     <hr class="border my-4" />
     <div class="flex flex-col gap-y-4">

@@ -1,6 +1,15 @@
 <template>
   <header
-    class="w-full p-4 bg-white shadow flex gap-x-10 justify-center items-center"
+    class="
+      w-full
+      p-4
+      bg-white
+      border-b-2
+      flex
+      gap-x-10
+      justify-center
+      items-center
+    "
   >
     <nuxt-link
       v-for="link in links"
