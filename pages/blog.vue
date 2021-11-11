@@ -3,7 +3,11 @@
     <h1 class="text-4xl font-bold">Blog</h1>
     <hr class="border my-4" />
     <div class="flex flex-col gap-y-4">
-      <article v-for="article in articles" :key="article" class="p-5 shadow">
+      <article
+        v-for="article in articles"
+        :key="article"
+        class="p-5 border bg-white rounded"
+      >
         <div class="mb-3">
           <nuxt-link
             class="p-1 text-sm rounded mr-2 text-blue-600 font-bold bg-blue-50"
@@ -22,8 +26,7 @@
             {{ article.title }}
           </p>
         </nuxt-link>
-        <p>{{ article.desc }}</p>
-        <p class="text-right">Created by: {{ article.author }}</p>
+        <p class="text-right mt-5 text-sm">Created by: {{ article.author }}</p>
       </article>
     </div>
   </div>
@@ -33,9 +36,9 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content("blog", params.slug)
-      .where({ status: "published" })
       .only(["title", "desc", "author", "slug", "tags"])
-      .sortBy("createdAt", "asc")
+      .sortBy("createdAt", "desc")
+      .where({ status: "published" })
       .fetch();
 
     return { articles };

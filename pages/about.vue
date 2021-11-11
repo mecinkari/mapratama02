@@ -6,7 +6,7 @@
     <hr class="border my-4" />
     <div class="prose prose-lg prose-blue mx-auto">
       <img
-        src="~/assets/profile.jpg"
+        src="~/static/assets/profile.jpg"
         class="w-40 rounded-full shadow"
         alt="profile"
       />

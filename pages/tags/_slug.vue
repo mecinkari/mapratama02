@@ -41,7 +41,7 @@ export default {
     const articles = await $content("blog")
       .only(["title", "desc", "author", "slug", "tags"])
       .sortBy("createdAt", "asc")
-      .where({ tags: { $contains: params.slug } })
+      .where({ tags: { $contains: params.slug }, status: "published" })
       .fetch();
     const slug = params.slug;
     return { articles, slug };

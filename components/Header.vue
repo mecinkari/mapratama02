@@ -1,23 +1,18 @@
 <template>
-  <header
-    class="
-      w-full
-      p-4
-      bg-white
-      border-b-2
-      flex
-      gap-x-10
-      justify-center
-      items-center
-    "
-  >
-    <nuxt-link
-      v-for="link in links"
-      :key="link.id"
-      class="text-gray-600 font-bold"
-      :to="link.to"
-      >{{ link.title }}</nuxt-link
-    >
+  <header class="border-b">
+    <div class="text-center py-10">
+      <p class="text-4xl font-black">Mapratama02</p>
+      <p>Muhammad Anugrah Pratama</p>
+    </div>
+    <nav class="w-full p-4 bg-white flex gap-x-10 justify-center items-center">
+      <nuxt-link
+        v-for="link in links"
+        :key="link.id"
+        class="text-gray-600 font-bold"
+        :to="link.to"
+        >{{ link.title }}</nuxt-link
+      >
+    </nav>
   </header>
 </template>
 
