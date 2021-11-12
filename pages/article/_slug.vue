@@ -1,7 +1,18 @@
 <template>
   <div class="py-6">
     <article
-      class="prose shadow rounded prose-lg prose-blue mx-auto bg-white p-5"
+      class="
+        prose prose-sm
+        md:prose
+        lg:prose-lg
+        prose-blue
+        max-w-none
+        shadow
+        rounded
+        mx-auto
+        bg-white
+        p-5
+      "
     >
       <nuxt-content :document="article" />
     </article>
@@ -28,6 +39,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

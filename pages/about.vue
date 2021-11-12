@@ -4,7 +4,7 @@
       <h1 class="text-4xl font-bold">Hello!</h1>
     </div>
     <hr class="border my-4" />
-    <div class="prose prose-lg prose-blue mx-auto">
+    <div class="prose prose-sm md:prose lg:prose-lg prose-blue mx-auto">
       <img
         src="~/static/assets/profile.jpg"
         class="w-40 rounded-full shadow"

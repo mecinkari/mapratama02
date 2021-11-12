@@ -1,6 +1,6 @@
 <template>
   <div class="py-5 max-w-6xl px-6 mx-auto">
-    <p class="text-3xl">Tulisan Terbaru</p>
+    <p class="text-4xl font-bold">Tulisan Terbaru</p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4">
       <article
         v-for="article in articles"
@@ -18,6 +18,9 @@
           v-else
           src="https://via.placeholder.com/1024x768/eee?text=4:3"
         />
+        <p class="text-sm mt-2 text-gray-500">
+          {{ formatDate(article.createdAt) }}
+        </p>
         <div class="my-3">
           <nuxt-link
             class="p-1 text-sm rounded mr-2 text-blue-600 font-bold bg-blue-50"
@@ -46,12 +49,17 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content("blog", params.slug)
       .limit(3)
-      .only(["title", "desc", "author", "slug", "tags", "img"])
       .sortBy("createdAt", "desc")
       .where({ status: "published" })
       .fetch();
 
     return { articles };
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString("id", options);
+    },
   },
 };
 </script>

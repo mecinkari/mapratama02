@@ -18,6 +18,7 @@
             #{{ tag }}
           </nuxt-link>
         </div>
+        <p class="text-sm text-gray-500">{{ formatDate(article.createdAt) }}</p>
         <nuxt-link
           class=""
           :to="{ name: 'article-slug', params: { slug: article.slug } }"
@@ -36,12 +37,17 @@
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content("blog", params.slug)
-      .only(["title", "desc", "author", "slug", "tags"])
       .sortBy("createdAt", "desc")
       .where({ status: "published" })
       .fetch();
 
     return { articles };
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString("id", options);
+    },
   },
 };
 </script>

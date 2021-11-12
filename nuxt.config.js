@@ -50,7 +50,12 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    nestedProperties: ['tags.slug']
+    nestedProperties: ['tags.slug'],
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
