@@ -14,6 +14,7 @@
       >
         <div class="text-center">
           <p class="text-3xl text-white">{{ article.title }}</p>
+          <p class="text-white">Dibuat oleh: {{ article.author }}</p>
         </div>
       </div>
       <img

@@ -2,6 +2,7 @@
 title: Membuat Portofolio Web Dengan Vue & Tailwind CSS (Part 1)
 desc: Tutorial
 author: Muhammad Anugrah Pratama
+created: 12 November 2021
 status: draft
 img: 
 tags:

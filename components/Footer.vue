@@ -1,12 +1,38 @@
 <template>
-  <footer class="px-12 py-3 mt-12 border-t">
-    <div class="max-w-2xl mx-auto">
+  <footer
+    class="
+      px-12
+      py-3
+      grid grid-cols-1
+      gap-y-2
+      md:gap-x-6 md:grid-cols-3
+      mt-12
+      border-t
+    "
+  >
+    <div>
       <p class="text-2xl mb-2">Links</p>
       <hr class="border-b" />
       <div class="flex flex-col divide-y">
         <a
           class="block py-2"
           v-for="link in footerLinks"
+          :key="link.id"
+          :href="link.href"
+          target="_blank"
+          rel="noopener noreferrer"
+          >{{ link.title }}</a
+        >
+      </div>
+    </div>
+    <!--  -->
+    <div>
+      <p class="text-2xl mb-2">Social Links</p>
+      <hr class="border-b" />
+      <div class="flex flex-col divide-y">
+        <a
+          class="block py-2"
+          v-for="link in socialLinks"
           :key="link.id"
           :href="link.href"
           target="_blank"
@@ -42,6 +68,18 @@ export default {
           id: 4,
           title: "BAAK Gunadarma",
           href: "http://baak.gunadarma.ac.id/",
+        },
+      ],
+      socialLinks: [
+        {
+          id: 1,
+          title: "Github",
+          href: "https://github.com/mecinkari/",
+        },
+        {
+          id: 2,
+          title: "Twitter",
+          href: "https://twitter.com/mecinkari",
         },
       ],
     };

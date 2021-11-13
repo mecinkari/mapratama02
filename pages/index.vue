@@ -46,7 +46,7 @@
             src="https://via.placeholder.com/1024x768/eee?text=4:3"
           />
           <p class="text-sm mt-2 text-gray-500">
-            {{ formatDate(article.createdAt) }}
+            {{ article.created }}
           </p>
           <div class="my-3">
             <nuxt-link

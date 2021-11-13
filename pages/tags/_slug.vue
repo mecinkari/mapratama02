@@ -20,7 +20,7 @@
             #{{ tag }}
           </nuxt-link>
         </div>
-        <p class="text-gray-500">{{ formatDate(article.createdAt) }}</p>
+        <p class="text-gray-500">{{ article.created }}</p>
         <nuxt-link
           class=""
           :to="{ name: 'article-slug', params: { slug: article.slug } }"

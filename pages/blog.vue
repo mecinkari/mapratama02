@@ -9,6 +9,19 @@
         class="p-5 border block w-full bg-white rounded"
       >
         <div class="mb-3">
+          <nuxt-img
+            class="rounded-lg"
+            v-if="article.img"
+            :src="`assets/blog/${article.img}`"
+            preset="preview"
+          />
+          <img
+            class="rounded-lg"
+            v-else
+            src="https://via.placeholder.com/1024x768/eee?text=4:3"
+          />
+        </div>
+        <div class="mb-3">
           <nuxt-link
             class="p-1 text-sm rounded mr-2 text-blue-600 font-bold bg-blue-50"
             v-for="tag in article.tags"
@@ -18,7 +31,7 @@
             #{{ tag }}
           </nuxt-link>
         </div>
-        <p class="text-sm text-gray-500">{{ formatDate(article.createdAt) }}</p>
+        <p class="text-sm text-gray-500">{{ article.created }}</p>
         <nuxt-link
           class=""
           :to="{ name: 'article-slug', params: { slug: article.slug } }"
