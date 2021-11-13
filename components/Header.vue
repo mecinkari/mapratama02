@@ -1,5 +1,5 @@
 <template>
-  <header class="border-b">
+  <header class="mb-12">
     <div class="text-center py-10">
       <p class="text-4xl font-black">Mapratama02</p>
       <p>Muhammad Anugrah Pratama</p>
@@ -24,7 +24,7 @@ export default {
       links: [
         {
           id: 1,
-          title: "Home",
+          title: "Beranda",
           to: "/",
         },
         {

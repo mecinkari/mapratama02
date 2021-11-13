@@ -1,12 +1,12 @@
 <template>
-  <div class="py-5 max-w-2xl px-6 mx-auto">
+  <div class="py-5 px-6 container mx-auto">
     <h1 class="text-4xl font-bold">Blog</h1>
     <hr class="border my-4" />
-    <div class="flex flex-col gap-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-4 gap-y-4">
       <article
         v-for="article in articles"
         :key="article"
-        class="p-5 border bg-white rounded"
+        class="p-5 border block w-full bg-white rounded"
       >
         <div class="mb-3">
           <nuxt-link
@@ -26,6 +26,7 @@
           <p class="text-2xl font-bold hover:text-blue-600">
             {{ article.title }}
           </p>
+          <!-- <nuxt-content :document="{ body: article.excerpt }" /> -->
         </nuxt-link>
         <p class="text-right mt-5 text-sm">Created by: {{ article.author }}</p>
       </article>
