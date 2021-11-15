@@ -32,8 +32,13 @@ export default {
           title: "Blog",
           to: "/blog",
         },
+        // {
+        //   id: 2,
+        //   title: "Sanity",
+        //   to: "/sanity",
+        // },
         {
-          id: 3,
+          id: 4,
           title: "About",
           to: "/about",
         },

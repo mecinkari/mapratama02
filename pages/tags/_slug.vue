@@ -29,8 +29,8 @@
             {{ article.title }}
           </p>
         </nuxt-link>
-        <p>{{ article.desc }}</p>
-        <p class="text-right">Created by: {{ article.author }}</p>
+        <!-- <p>{{ article.desc }}</p> -->
+        <p class="text-right text-sm">Created by: {{ article.author }}</p>
       </article>
     </div>
   </div>
@@ -46,6 +46,12 @@ export default {
     const slug = params.slug;
     return { articles, slug };
   },
+  // async asyncData({ params, $sanity }) {
+  //   const query = groq`*[_type == "post" && *[_type == "category" && title == "${params.slug}"][0]._id in categories[]._ref]{title, publishedAt, slug, mainImage{asset->{_id, url}}, categories[]->{title, "id":_id}}`;
+  //   const articles = await $sanity.fetch(query);
+  //   const slug = params.slug;
+  //   return { articles, slug };
+  // },
   methods: {
     formatDate(date) {
       const options = { year: "numeric", month: "long", day: "numeric" };
